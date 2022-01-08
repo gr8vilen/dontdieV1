@@ -1,0 +1,96 @@
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  color: #ffd868;
+  text-align: center;
+  background: #272727;
+}
+
+button {
+  color: #ffd868;
+  background: none;
+  border: 1px solid #ffd868;
+  margin: auto;
+  padding: 5px 20px;;
+}
+
+#container {
+  position: relative;
+  /* top: 150px; */
+}
+p{
+  font-size: 2.54rem;
+  margin-bottom: 2px;
+}
+
+</style>
+<body>
+  <div id="container">
+    <p><span id='seconds'>00</span>:<span id='tens'>00</span></p>
+  
+    <button id='button-start'>Start</button>
+    <button id='button-stop'>Stop</button>
+    <button id='button-reset'>Reset</button>
+  </div>
+  <script>
+    window.onload = function () {
+  console.log('working....')
+  
+  var seconds = 00;
+  var tens = 00;
+  var appendTens = document.getElementById('tens')
+  var appendSeconds = document.getElementById('seconds')
+  var buttonStart = document.getElementById('button-start');
+  var buttonStop = document.getElementById('button-stop');
+  var buttonReset = document.getElementById('button-reset');
+  var interval;
+  
+  buttonStart.onclick = function() {
+    
+    clearInterval(interval);
+    interval = setInterval(startTimer, 10);
+  }
+  
+  buttonStop.onclick = function() {
+    clearInterval(interval);
+    console.log('stop');
+  }
+  
+  buttonReset.onclick = function() {
+    clearInterval(interval);
+    tens = '00';
+    seconds = '00';
+    appendTens.innerHTML = tens;
+    appendSeconds.innerHTML = seconds;
+    console.log('reset');
+  }
+  
+  function startTimer () {
+    tens++;
+    
+    if(tens <= 9) {
+      appendTens.innerHTML = '0' + tens;
+    }
+    
+    if(tens > 9) {
+      appendTens.innerHTML = tens;
+    }
+    
+    if(tens > 99) {
+      console.log('second tick');
+      seconds++;
+      appendSeconds.innerHTML = '0' + seconds;
+      tens = 0;
+      appendTens.innerHTML = '0' + 0;
+    }
+    
+    if (seconds > 9 ) {
+      appendSeconds.innerHTML = seconds;
+    }
+    
+  }
+}
+  </script>
+</body>
+</html>

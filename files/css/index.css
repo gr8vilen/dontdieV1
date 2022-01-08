@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: 100PX !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+    border-color: #fff !important;
+
+}
+
+body{
+    overflow: hidden; /* Hide scrollbars */
+
+    margin: 0px;     /* ADD STYLE ! */
+    height: 100vh;
+    background-image:url(/files/pictures/bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  
+}
+body.zt{
+    overflow: hidden; /* Hide scrollbars */
+
+    margin: 0px;     /* ADD STYLE ! */
+    height: 100vh;
+    background-image:url(/files/pictures/1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  
+}
+body.na{
+    overflow: hidden; /* Hide scrollbars */
+
+    margin: 0px;     /* ADD STYLE ! */
+    height: 100vh;
+    background-image:url(/files/pictures/2.jpg) !important;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  
+}
+body.ds{
+    overflow: hidden; /* Hide scrollbars */
+
+    margin: 0px;     /* ADD STYLE ! */
+    height: 100vh;
+    background-image:url(/files/pictures/3.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  
+}
+
+
+.nav-btn{
+    /* font-size: 10%; */
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.navmain{
+    height: 1rem !important;
+}
+
+.img{
+    background-color: #fff;
+    border: 0.5px solid #dee2e6;
+    border-radius: 100rem;
+    width: 10rem !important; 
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ------timmer------ */
+.left{
+    display: none;
+    position: fixed;
+    bottom: 300px;
+    right: 310px;
+}
+#mydiv-timmer {
+    position: absolute;
+
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    height: 150px;
+    border-radius: 10px;
+        
+  }
+#mydivheader-timmer {
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #212529;
+    margin-bottom: 1px;
+    color: #fff;
+    border-bottom: 10px;
+  }
+#fram-timmer{
+    border-radius: 0px 0px 10px 10px;    
+    height:102px !important;
+    background-color: #212529;
+
+   }
+.button-on-fram{
+  display: inline-block;
+  float: right;
+  background-color: #212529;
+}
+
+/* ----------------- */
+
+/* ---------music-------- */
+
+#mydiv-music {
+    position: absolute;
+    z-index: 11;
+    background-color: #212529;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    height: 300px;
+    border-radius: 10px;
+    width: 300px !important;
+    
+  }
+#mydivheader-music {
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    cursor: move;
+    z-index: 12;
+    background-color: #212529;
+    margin-bottom: 1px;
+    color: #fff;
+    border-bottom: 10px;
+  }
+.fram-music-chg{
+    display: inline-block;
+    background-color: #212529;
+}
+.right-music{
+    display: none;
+    position: fixed;
+    bottom: 300px;
+    
+}
+
+/* ------------------ */
+
+/* ---------todo------- */
+#mydiv-todo {
+    position: absolute;
+    z-index: 11;
+    background-color: #0000;
+    text-align: center;
+    max-height: 300px;
+    height: 280px;
+    border-radius: 10px;
+    width: 300px !important;
+    
+  }
+#mydivheader-todo {
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    cursor: move;
+    z-index: 12;
+    background-color: #212529;
+    margin-bottom: 1px;
+    color: #fff;
+    border-bottom: 10px;
+  }
+
+.left-todo{
+    display: none;
+    position: fixed;
+    top: 1px;
+    right: 301px;
+}
+
+/* ------------------- */
+#phone{
+    display: none ;
+    color: black !important;
+}
+@media (max-width: 767px) {
+    .dektop{
+      display: none;
+    }
+    #phone{
+        display: flex;
+        color: #fff !important;
+        text-align: center;
+    }
+}

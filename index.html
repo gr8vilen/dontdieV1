@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dontdie V1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/files/css/index.css">
+</head>
+<body>
+<div class="dektop">
+      <!-- nav menu  -->
+      <button type="button" class="btn btn-dark nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#backoffcanvas" aria-controls="backoffcanvas">background</button> <br>
+      <button type="button" class="btn btn-dark nav-btn" id="todotoggle" type="button" >to do</button> <br>
+      <button type="button" class="btn btn-dark nav-btn" id="musictoggle" type="button" > music</button> <br>
+      <button type="button" class="btn btn-dark nav-btn" id="timmertoggle" type="button" > timer</button> <br>
+  
+        <!-- offcanvas content  -->
+        <div class="offcanvas offcanvas-top bg-dark" tabindex="-1" id="backoffcanvas" aria-labelledby="backoffcanvas">
+          <div class="offcanvas-body">
+            <h5 class="center">
+              amine
+            </h5>
+            <div class="btn-group center" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-primary" id="zt">zero two</button>
+              <button type="button" class="btn btn-outline-primary" id="na">naruto</button>
+              <button type="button" class="btn btn-outline-primary" id="ds">demon slayer</button>
+            </div>
+          <hr>
+            <h6 class="center">
+              ......new background coming soon......
+            </h6>
+          </div>
+        </div>
+    
+  
+        <!-- offcanvas content end  -->
+      <!-- nav menu end -->
+        <!-- Time -->
+        <iframe src="/files/time.html" frameborder="0" style="position: fixed;right: 0px; bottom: 0px;"></iframe>
+        <!-- time  -->
+        <!-- ----------------------------------- -->
+        <!-- timer -->
+        <div class="left" id='timmerid' >
+          <div id="mydiv-timmer">
+            <div id="mydivheader-timmer">Click here to move <button class="button-on-fram " id="btntimmertoggleoff">x</button></div>
+            <iframe id="fram-timmer" src="/files/timer.html" frameborder="0" ></iframe>
+          </div>
+  
+        </div>
+          
+        <!-- timer-end -->
+        <!-- music -->
+        <div class="right-music" id='musicid' >
+          <div id="mydiv-music">
+            <div id="mydivheader-music">Click here to move <button class="button-on-fram " id="btnmusictoggleoff">x</button></div>
+            <iframe id="mus-src" src="https://open.spotify.com/embed/playlist/12VIw7g6qWYuOqo4kg4Q9E?utm_source=generator&theme=0" width="100%" height="210" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <br>
+            <button class="fram-music-chg" id="music-1">anime</button>
+            <button class="fram-music-chg" id="music-2">hindi</button>
+            <button class="fram-music-chg" id="music-3">english</button>
+          </div>
+        </div>
+        <!-- music-end -->
+        <!-- todo  -->
+        <div class="left-todo" id='todoid' >
+          <div id="mydiv-todo">
+            <div id="mydivheader-todo">Click here to move <button class="button-on-fram " id="btntodotoggleoff">x</button></div>
+            <iframe src="/files/todo.html" frameborder="0" width="100%" height="220px"></iframe>
+          </div>
+  
+        </div>
+</div>
+
+
+
+
+      <!-- <iframe src="/files/todo.html" frameborder="0" width="100%" height="400px"></iframe> -->
+      <!-- todo-end  -->
+
+
+      <!-- phone view -->
+      <h1 id="phone" style="background-color: black;">
+        this site is not for phone or tab 
+      open in pc/laptop
+      </h1>
+      <!-- phone view end  -->
+
+
+
+</body>
+<script src="/files/js/indx.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
